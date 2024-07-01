@@ -1,7 +1,14 @@
 <h1>User List</h1>
 
-<app-user-card
-  *ngFor="let user of users"
-  [username]="user.username"
-  [password]="user.password"
-></app-user-card>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <app-user-card
+        *ngFor="let user of users"
+        [username]="user.username"
+        [password]="user.password"
+        [icon]="user.icon"
+      ></app-user-card>
+    </div>
+  </div>
+</div>

@@ -2,15 +2,18 @@
   "users": [
     {
       "username": "user",
-      "password": "pass"
+      "password": "pass",
+      "icon": "icon1.png"
     },
     {
       "username": "sjohnson",
-      "password": "Pass123!"
+      "password": "Pass123!",
+      "icon": "icon1.png"
     },
     {
       "username": "qwerty",
-      "password": "asdf"
+      "password": "asdf",
+      "icon": "icon1.png"
     }
   ]
 }

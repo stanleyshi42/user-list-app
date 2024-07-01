@@ -8,6 +8,7 @@ import { Component, Input } from '@angular/core';
 export class UserCardComponent {
   @Input() username!: string;
   @Input() password!: string;
+  @Input() icon!: string;
   
   constructor() {}
 }
