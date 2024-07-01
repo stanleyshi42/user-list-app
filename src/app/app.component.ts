@@ -9,7 +9,7 @@ import { User } from './user.model';
 })
 export class AppComponent {
   title = 'user-list-app';
-  users: User[] = [];
+  users!: User[];
 
   constructor(private service: UserService) {}
 
