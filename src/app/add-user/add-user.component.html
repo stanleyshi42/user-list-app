@@ -1,11 +1,20 @@
-<div class="">
-  <form (ngSubmit)="addUser()">
+<form (ngSubmit)="addUser()">
+  <div class="row my-1">
     <label>Username: </label>
-    <input class="mx-1" name="username" [(ngModel)]="user.username" required />
+    <input class="" name="username" [(ngModel)]="user.username" required />
+  </div>
+
+  <div class="row my-1">
     <label>Password: </label>
-    <input class="mx-1" name="password" [(ngModel)]="user.password" required />
-    <label>Icon URL: </label>
-    <input class="mx-1" name="icon" [(ngModel)]="user.icon" />
-    <button type="submit">Add User</button>
-  </form>
-</div>
+    <input class="" name="password" [(ngModel)]="user.password" required />
+  </div>
+
+  <div class="row my-1">
+    <label>Icon URL (Optional): </label>
+    <input class="" name="icon" [(ngModel)]="user.icon" />
+  </div>
+
+  <div class="row my-3">
+    <button class="btn btn-primary" type="submit">Add User</button>
+  </div>
+</form>

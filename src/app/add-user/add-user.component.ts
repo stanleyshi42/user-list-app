@@ -13,12 +13,18 @@ export class AddUserComponent {
     password: '',
     icon: '',
   };
-
   constructor(private service: UserService) {}
 
   addUser(): void {
+    // Input validation
+    if (this.user.username.trim() == '' || this.user.password.trim() == '') {
+      console.log('Invalid username or password');
+      return;
+    }
+
     this.service.addUser(this.user).subscribe((data) => {
       console.log(data);
+      location.reload(); // Refresh page
     });
   }
 }
