@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { UserCardComponent } from './user-card/user-card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { AddUserComponent } from './add-user/add-user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserCardComponent
+    UserCardComponent,
+    AddUserComponent
   ],
   imports: [
     BrowserModule,
