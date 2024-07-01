@@ -1,11 +1,11 @@
-<div>
+<div class="">
   <form (ngSubmit)="addUser()">
     <label>Username: </label>
-    <input name="username" [(ngModel)]="user.username" required />
-    <label>Password</label>
-    <input name="password" [(ngModel)]="user.password" required />
-    <label>Icon URL</label>
-    <input name="icon" [(ngModel)]="user.icon" required />
-    <button type="submit">Add</button>
+    <input class="mx-1" name="username" [(ngModel)]="user.username" required />
+    <label>Password: </label>
+    <input class="mx-1" name="password" [(ngModel)]="user.password" required />
+    <label>Icon URL: </label>
+    <input class="mx-1" name="icon" [(ngModel)]="user.icon" />
+    <button type="submit">Add User</button>
   </form>
 </div>
